@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CategoryContainer from './components/Categorias/CategoryContainer';
 import Contactos from './components/Contactos/Contactos';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -19,6 +20,7 @@ root.render(
         <Route exact path='/' element={<ItemListContainer />} />
         <Route exact path='/contactos' element={<Contactos />} />
         <Route exact path='/producto/:id' element={<ItemDetailContainer />} />
+        <Route exact path='/categorias/:categoria' element={<CategoryContainer />} />
 
       </Routes>
 
