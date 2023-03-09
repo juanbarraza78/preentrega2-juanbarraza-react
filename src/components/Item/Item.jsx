@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const Item = ({ producto }) => {
   return (
     <div className="card" style={{ width: "20rem", margin: ".5rem" }}>
